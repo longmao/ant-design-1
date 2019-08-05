@@ -132,6 +132,7 @@ module.exports = {
   devServerConfig: {
     public: process.env.DEV_HOST || 'localhost',
     disableHostCheck: !!process.env.DEV_HOST,
+    host: '0.0.0.0',
   },
 
   htmlTemplateExtraData: {

@@ -159,6 +159,8 @@ const api: any = {
       onClose = duration;
       duration = undefined;
     }
+    console.log(document.documentElement.scrollTop);
+    defaultTop = document.documentElement.scrollTop || 0;
     return api.open({ content, duration: duration, type, onClose });
   };
 });
